@@ -70,5 +70,76 @@ button {
 
 .location-modal {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
 }
+
+.location-modal.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-form {
+    width: 500px;
+    height: 350px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #D9653B;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.4);
+    color: white;
+}
+
+.location-form h3 {
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+.location-form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px auto;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+}
+
+.location-form button {
+    width: 150px;
+    font-weight: bold;
+}
+
+.location-form button.xBtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.modal-buttons-container {
+    margin-top: 50px;
+    text-align: right;
+}
+
+.location-form button.closeBtn {
+    width: 100px;
+}
+
+.location-form button.submitBtn {
+    background-color: #5CF29D;
+}
+
+
 

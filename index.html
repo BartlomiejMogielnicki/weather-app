@@ -22,16 +22,18 @@
         </ul>
         <button class="changeBtn" id="changeBtn">Change location</button>
     </div>
-    <div class="location-modal">
+    <div class="location-modal" id="location-modal">
         <form class="location-form" id="location-form">
             <h3>Location</h3>
             <label for="city">City</label>
             <Input type="text" id="city"></Input>
             <label for="country">Country</label>
             <Input type="text" id="country"></Input>
-            <button>Close</button>
-            <button>Submit changes</button>
-            <button>x</button>
+            <div class="modal-buttons-container">
+                <button class="closeBtn" id="closeBtn">Close</button>
+                <button class="submitBtn" id="submitBtn">Submit changes</button>
+            </div>
+            <button class="xBtn" id="xBtn">X</button>
         </form>
     </div>
 
